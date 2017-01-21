@@ -3,7 +3,7 @@ package guessing_game;
 import java.util.Scanner;
 
 /**
- * Game of guessing a secret number
+ * Game console of guessing a secret number
  * @author Sirasath Piyapootinun
  *
  */

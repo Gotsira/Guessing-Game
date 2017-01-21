@@ -3,7 +3,7 @@ package guessing_game;
 import java.util.Random;
 
 /**
- * Game of guessing a secret number
+ * Game of guessing a secret number.
  * @author Sirasath Piyapootinun
  *
  */
@@ -38,7 +38,7 @@ public class Game {
 	
 	/**
 	 * Checks if the number is equal to the answer or not.
-	 * @param number is the number that you have guessed
+	 * @param number is the number that you have guessed.
 	 * @return Is ans equals to number?
 	 */
 	
@@ -62,7 +62,7 @@ public class Game {
 	
 	/**
 	 * Return a hint based on the most recent guess.
-	 * @return hint based on the most recent guess
+	 * @return hint based on the most recent guess.
 	 */
 	
 	public String getHint() {
@@ -71,7 +71,7 @@ public class Game {
 	
 	/**
 	 * Set hint for the answer
-	 * @param hint to be set
+	 * @param hint is the hint for the secret number.
 	 */
 	
 	protected void setHint(String hint) {
@@ -80,7 +80,7 @@ public class Game {
 	
 	/**
 	 * Return the secret number.
-	 * @return secret number
+	 * @return secret number of the game.
 	 */
 	
 	public int getSecret() {
