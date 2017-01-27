@@ -1,4 +1,4 @@
-package guessing_game;
+package guessinggame;
 
 /**
  * Game of guessing a secret number.
