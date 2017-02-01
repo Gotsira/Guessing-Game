@@ -1,3 +1,3 @@
 # Guessing-Game
-I'm Sirasath Piyapootinun
+By Sirasath Piyapootinun
 5910546465
