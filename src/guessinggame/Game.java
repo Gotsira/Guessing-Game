@@ -12,7 +12,7 @@ public class Game {
 	private int upperBound;
 	private int secret;
 	private String hint;
-	private int count = 0;
+	private int count;
 	
 	/**
 	 * Initialize a new game
@@ -22,7 +22,8 @@ public class Game {
 	public Game(int upperBound) {
 		this.upperBound = upperBound;
 		secret = getRandomNumber(upperBound);
-		System.out.printf("I'm thinking of a number between 1 and %d.\n", upperBound);	
+		setHint(String.format("I'm thinking of a number between 1 and %d.\n", upperBound));	
+		count = 0;
 	}
 	
 	/**
@@ -43,19 +44,17 @@ public class Game {
 	 */
 	
 	public boolean guess(int number) {
+		count++;
 		if(number == secret){
 			setHint(String.format("Correct. The secret is %d", secret));
-			count++;
 			return true;
 		}
 		else if(number < secret){
 			setHint("Sorry, your guess is too small.");
-			count++;
 			return false;
 		}
 		else{
 			setHint("Sorry, your guess is too large");
-			count++;
 			return false;
 		}
 	}
@@ -76,15 +75,6 @@ public class Game {
 	
 	protected void setHint(String hint) {
 		this.hint = hint;
-	}
-	
-	/**
-	 * Return the secret number.
-	 * @return secret number of the game.
-	 */
-	
-	public int getSecret() {
-		return secret;
 	}
 	
 	/**
